@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Sakklepesek_PalDavid/1.0.0": {
+        "runtime": {
+          "Sakklepesek_PalDavid.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sakklepesek_PalDavid/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
