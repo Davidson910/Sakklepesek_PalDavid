@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Sakklépések - Pál Dávid" Height="800" Width="800">
     <Grid>
-        <Canvas Height="640" Width="640"/>
+        <Canvas x:Name="tabla" Height="640" Width="640"/>
         <RadioButton Content="Sötét gyalog" Name="SParaszt" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Világos gyalog" Name="VParaszt" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Király" Name="Kiraly" HorizontalAlignment="Left" Margin="203,10,0,0" VerticalAlignment="Top"/>
