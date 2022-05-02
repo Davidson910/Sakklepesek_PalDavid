@@ -21,7 +21,7 @@ namespace Sakklepesek_PalDavid
     public partial class MainWindow : Window
     {
         int meret = 8;
-        Rectangle[,] mezok;
+        Button[,] mezok;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace Sakklepesek_PalDavid
         }
         private void Tablakialakitasa()
         {
-            mezok = new Rectangle[meret, meret];
+            mezok = new Button[meret, meret];
             for (int i = 0; i < meret; i++)
             {
 
@@ -39,17 +39,36 @@ namespace Sakklepesek_PalDavid
                     negyzet.Height = tabla.Height / meret;
                     negyzet.Width = tabla.Width / meret;
                     negyzet.Margin = new Thickness(tabla.Width / meret * j, tabla.Height / meret * i, 0, 0);
-                    //negyzet.Click += SzinCsere;
+                    negyzet.Click += SzinCsere;
                     tabla.Children.Add(negyzet);
 
                     if (i % 2 == 1 && j % 2 == 1)
-                        negyzet.Background = Brushes.White;
+                        negyzet.Background = Brushes.Bisque;
                     else if (j % 2 == 0 && i % 2 == 0)
-                        negyzet.Background = Brushes.White;
+                        negyzet.Background = Brushes.Bisque;
                     else
-                        negyzet.Background = Brushes.Black;
+                        negyzet.Background = Brushes.Chocolate;
                 }
+
             }
+        }
+        private void SzinCsere(object sender, RoutedEventArgs e)
+        {
+            Button kijelolt = (Button)sender;
+            if (SParaszt.IsChecked == true)
+                kijelolt.Content = "\u265f";
+            else if (VParaszt.IsChecked == true)
+                kijelolt.Content = "\u2659";
+            else if (Kiraly.IsChecked == true)
+                kijelolt.Content = "\u265a";
+            else if (Kiralyne.IsChecked == true)
+                kijelolt.Content = "\u2655";
+            else if (Lo.IsChecked == true)
+                kijelolt.Content = "\u2658";
+            else if (Futo.IsChecked == true)
+                kijelolt.Content = "\u2657";
+            else if (Bastya.IsChecked == true)
+                kijelolt.Content = "\u2656";
         }
     }
 }
