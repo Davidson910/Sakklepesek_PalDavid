@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sakklepesek_PalDavid"
         mc:Ignorable="d"
-        Title="Sakklépések - Pál Dávid" Height="800" Width="800" Background="LightGray">
+        Title="Sakklépések - Pál Dávid" Height="800" Width="800" Background="LightGray" ResizeMode="NoResize">
     <Grid>
         <Canvas x:Name="tabla" Height="640" Width="640"/>
         <RadioButton Content="Sötét gyalog" Name="SParaszt" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
@@ -37,6 +37,10 @@
             <Label Content="7" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
             <Label Content="8" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
         </DockPanel>
+        <Label Content="Jelenlegi mező:" HorizontalAlignment="Left" Margin="10,726,0,0" VerticalAlignment="Top"/>
+        <Label Name="mezo" Content="H8" HorizontalAlignment="Left" Margin="101,726,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lehetséges lépések:" HorizontalAlignment="Left" Margin="126,726,0,0" VerticalAlignment="Top"/>
+        <Label Name="lehetseges" Content="" HorizontalAlignment="Left" Margin="241,726,0,0" VerticalAlignment="Top" Width="548"/>
 
     </Grid>
 </Window>
