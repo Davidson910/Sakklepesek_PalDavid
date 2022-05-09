@@ -15,9 +15,28 @@
         <RadioButton Content="Futó" Name="Futo" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Huszár" Name="Lo" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Bástya" Name="Bastya" HorizontalAlignment="Left" Margin="431,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="25" Margin="101,42,0,0" VerticalAlignment="Top" Width="689" FontWeight="Bold"/>
-        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="24" Margin="101,701,0,0" VerticalAlignment="Top" Width="688" FontWeight="Bold"/>
-        <Label Content="1" HorizontalAlignment="Left" Height="645" Margin="40,67,0,0" VerticalAlignment="Top" Width="40"/>
+        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="25" Margin="101,42,0,0" VerticalAlignment="Top" Width="689" FontWeight="Normal"/>
+        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="24" Margin="101,701,0,0" VerticalAlignment="Top" Width="688" FontWeight="Normal"/>
+        <DockPanel Margin="53,85,0,59" Height="640" HorizontalAlignment="Left" Width="27">
+            <Label Content="1" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="2" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="3" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="4" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="5" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="6" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="7" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+            <Label Content="8" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"></Label>
+        </DockPanel>
+        <DockPanel Margin="720,85,0,59" Height="640" HorizontalAlignment="Left" Width="27">
+            <Label Content="1" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="2" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="3" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="4" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="5" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="6" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="7" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+            <Label Content="8" Margin="0,0,0,0" Height="80" DockPanel.Dock="Top"/>
+        </DockPanel>
 
     </Grid>
 </Window>
