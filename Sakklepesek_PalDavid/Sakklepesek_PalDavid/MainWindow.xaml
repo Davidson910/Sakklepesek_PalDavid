@@ -15,7 +15,9 @@
         <RadioButton Content="Futó" Name="Futo" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Huszár" Name="Lo" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Bástya" Name="Bastya" HorizontalAlignment="Left" Margin="431,10,0,0" VerticalAlignment="Top"/>
-
+        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="25" Margin="101,42,0,0" VerticalAlignment="Top" Width="689" FontWeight="Bold"/>
+        <Label Content="A                        B                      C                      D                      E                      F                      G                      H" HorizontalAlignment="Left" Height="24" Margin="101,701,0,0" VerticalAlignment="Top" Width="688" FontWeight="Bold"/>
+        <Label Content="1" HorizontalAlignment="Left" Height="645" Margin="40,67,0,0" VerticalAlignment="Top" Width="40"/>
 
     </Grid>
 </Window>

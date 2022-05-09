@@ -39,7 +39,7 @@ namespace Sakklepesek_PalDavid
                     negyzet.Height = tabla.Height / meret;
                     negyzet.Width = tabla.Width / meret;
                     negyzet.Margin = new Thickness(tabla.Width / meret * j, tabla.Height / meret * i, 0, 0);
-                    negyzet.Click += SzinCsere;
+                    negyzet.Click += BabuElhelyezes;
                     tabla.Children.Add(negyzet);
 
                     if (i % 2 == 1 && j % 2 == 1)
@@ -52,23 +52,16 @@ namespace Sakklepesek_PalDavid
 
             }
         }
-        private void SzinCsere(object sender, RoutedEventArgs e)
+        private void BabuElhelyezes(object sender, RoutedEventArgs e)
         {
             Button kijelolt = (Button)sender;
-            if (SParaszt.IsChecked == true)
-                kijelolt.Content = "\u265f";
-            else if (VParaszt.IsChecked == true)
-                kijelolt.Content = "\u2659";
-            else if (Kiraly.IsChecked == true)
-                kijelolt.Content = "\u265a";
-            else if (Kiralyne.IsChecked == true)
-                kijelolt.Content = "\u2655";
-            else if (Lo.IsChecked == true)
-                kijelolt.Content = "\u2658";
-            else if (Futo.IsChecked == true)
-                kijelolt.Content = "\u2657";
-            else if (Bastya.IsChecked == true)
-                kijelolt.Content = "\u2656";
+            if (SParaszt.IsChecked == true) { kijelolt.Content = "\u265f"; kijelolt.FontSize = 25; }
+            else if (VParaszt.IsChecked == true) { kijelolt.Content = "\u2659"; kijelolt.FontSize = 40; }
+            else if (Kiraly.IsChecked == true) { kijelolt.Content = "\u265a"; kijelolt.FontSize = 40; }
+            else if (Kiralyne.IsChecked == true) { kijelolt.Content = "\u2655"; kijelolt.FontSize = 40; }
+            else if (Lo.IsChecked == true) { kijelolt.Content = "\u2658"; kijelolt.FontSize = 40; }
+            else if (Futo.IsChecked == true) { kijelolt.Content = "\u2657"; kijelolt.FontSize = 40; }
+            else if (Bastya.IsChecked == true) { kijelolt.Content = "\u2656"; kijelolt.FontSize = 40; }
         }
     }
 }
