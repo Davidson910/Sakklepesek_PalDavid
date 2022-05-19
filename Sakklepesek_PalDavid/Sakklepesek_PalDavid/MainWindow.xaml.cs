@@ -55,13 +55,48 @@ namespace Sakklepesek_PalDavid
         private void BabuElhelyezes(object sender, RoutedEventArgs e)
         {
             Button kijelolt = (Button)sender;
-            if (SParaszt.IsChecked == true) { kijelolt.Content = "\u265f"; kijelolt.FontSize = 25; }
+            List<Button> negyzetek = new List<Button>();
+            for (int i = 0; i < meret; i++)
+            {
+                for (int j = 0; j < meret; j++)
+                {
+                    negyzetek.Add(mezok[i, j]);
+                }
+            }
+            if (SParaszt.IsChecked == true) {
+                if (kijelolt == mezok[1,1])
+                    MessageBox.Show("A bábu nem lehet azon a mezőn.");
+                else 
+                { 
+                    kijelolt.Content = "\u265f"; kijelolt.FontSize = 25;
+
+                }
+            }
             else if (VParaszt.IsChecked == true) { kijelolt.Content = "\u2659"; kijelolt.FontSize = 40; }
             else if (Kiraly.IsChecked == true) { kijelolt.Content = "\u265a"; kijelolt.FontSize = 40; }
             else if (Kiralyne.IsChecked == true) { kijelolt.Content = "\u2655"; kijelolt.FontSize = 40; }
             else if (Lo.IsChecked == true) { kijelolt.Content = "\u2658"; kijelolt.FontSize = 40; }
             else if (Futo.IsChecked == true) { kijelolt.Content = "\u2657"; kijelolt.FontSize = 40; }
             else if (Bastya.IsChecked == true) { kijelolt.Content = "\u2656"; kijelolt.FontSize = 40; }
+        }
+        private List<int> GetIndex(Button button)
+        {
+            for (int i = 0; i < meret; i++)
+            {
+                for (int j = 0; j < meret; j++)
+                {
+                    if (mezok[i, j] == button)
+                    {
+
+                        List<int> indexek = new List<int>();
+                        indexek.Add(i);
+                        indexek.Add(j);
+
+                        return indexek;
+                    }
+                }
+            }
+            return null;
         }
     }
 }

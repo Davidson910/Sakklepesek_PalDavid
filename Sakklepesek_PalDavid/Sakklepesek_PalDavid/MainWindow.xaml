@@ -41,6 +41,5 @@
         <Label Name="mezo" Content="H8" HorizontalAlignment="Left" Margin="101,726,0,0" VerticalAlignment="Top"/>
         <Label Content="Lehetséges lépések:" HorizontalAlignment="Left" Margin="126,726,0,0" VerticalAlignment="Top"/>
         <Label Name="lehetseges" Content="" HorizontalAlignment="Left" Margin="241,726,0,0" VerticalAlignment="Top" Width="548"/>
-
     </Grid>
 </Window>
