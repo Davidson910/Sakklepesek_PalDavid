@@ -63,6 +63,20 @@ namespace Sakklepesek_PalDavid
                     negyzetek.Add(mezok[i, j]);
                 }
             }
+           /* int x = -1, y = -1;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (mezok[i, j].Equals(kijelolt))
+                    {
+                        x = i;
+                        y = j;
+                        mezok[i, j].Content = " ";
+                    }
+                }
+            }
+            mezo.Content = $"({x},{y})";*/
             if (SParaszt.IsChecked == true) {
                 if (kijelolt == mezok[1,1])
                     MessageBox.Show("A bábu nem lehet azon a mezőn.");
@@ -78,25 +92,6 @@ namespace Sakklepesek_PalDavid
             else if (Lo.IsChecked == true) { kijelolt.Content = "\u2658"; kijelolt.FontSize = 40; }
             else if (Futo.IsChecked == true) { kijelolt.Content = "\u2657"; kijelolt.FontSize = 40; }
             else if (Bastya.IsChecked == true) { kijelolt.Content = "\u2656"; kijelolt.FontSize = 40; }
-        }
-        private List<int> GetIndex(Button button)
-        {
-            for (int i = 0; i < meret; i++)
-            {
-                for (int j = 0; j < meret; j++)
-                {
-                    if (mezok[i, j] == button)
-                    {
-
-                        List<int> indexek = new List<int>();
-                        indexek.Add(i);
-                        indexek.Add(j);
-
-                        return indexek;
-                    }
-                }
-            }
-            return null;
         }
     }
 }
